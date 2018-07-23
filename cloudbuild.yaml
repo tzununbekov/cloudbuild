@@ -9,4 +9,4 @@ steps:
   args: ['ls']
 - name: fail
   image: busybox
-  args: ['foo']
+  args: ['bar']
