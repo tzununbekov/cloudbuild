@@ -7,9 +7,6 @@ steps:
 - name: ls
   image: busybox
   args: ['ls']
-- name: data
+- name: date
   image: busybox
-  args: ['date']
-- name: fail
-  image: busybox
-  args: ['bar']
+  args: ['/bin/date']
