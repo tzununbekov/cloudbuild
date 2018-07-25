@@ -9,4 +9,4 @@ steps:
   args: ['ls']
 - name: date
   image: busybox
-  args: ['/bin/date']
+  args: ['/bin/foo']
