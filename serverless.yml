@@ -8,9 +8,33 @@ plugins:
   - serverless-kubeless
 
 functions:
-  hellowithdata:
-    handler: hellowithdata.handler
+  create:
+    handler: create.handler
     events:
       - schedule: cron(*/10 * * * *)
       - http:
-      - trigger: kafka.test.topic
+      - trigger: kafka.create.topic
+  update:
+    handler: update.handler
+    events:
+      - schedule: cron(*/20 * * * *)
+      - http:
+      - trigger: kafka.update.topic
+  replace:
+    handler: replace.handler
+    events:
+      - schedule: cron(*/30 * * * *)
+      - http:
+      - trigger: kafka.replace.topic
+  delete:
+    handler: delete.handler
+    events:
+      - schedule: cron(*/40 * * * *)
+      - http:
+      - trigger: kafka.delete.topic
+  get:
+    handler: get.handler
+    events:
+      - schedule: cron(*/50 * * * *)
+      - http:
+      - trigger: kafka.get.topic
