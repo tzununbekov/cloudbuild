@@ -6,6 +6,3 @@ steps:
 - name: date
   image: busybox
   args: ['/bin/date']
-- name: error
-  image: busybox
-  args: ['/bin/foo']
