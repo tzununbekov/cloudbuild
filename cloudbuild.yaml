@@ -1,5 +1,8 @@
 serviceAccountName: build
 steps:
+- name: yo
+  image: busybox
+  args: ['echo', 'yo']
 - name: ls
   image: busybox
   args: ['ls']
