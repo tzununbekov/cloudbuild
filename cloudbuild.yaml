@@ -2,7 +2,7 @@ serviceAccountName: build
 steps:
 - name: yo
   image: busybox
-  args: ['echo', 'yo']
+  args: ['echo', 'catalin']
 - name: ls
   image: busybox
   args: ['ls']
