@@ -1,4 +1,3 @@
-serviceAccountName: build
 steps:
 - name: yo
   image: busybox
