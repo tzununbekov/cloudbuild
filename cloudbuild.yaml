@@ -1,11 +1,11 @@
 steps:
 - name: yo
-  image: busybox
-  command: ['/bin/echo']
+  image: debian:slim
+  command: ['echo']
   args: ['catalin']
 - name: ls
-  image: busybox
+  image: debian:slim
   args: ['ls']
 - name: date
-  image: busybox
+  image: debian:slim
   args: ['/bin/date']
