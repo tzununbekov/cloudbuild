@@ -1,10 +1,10 @@
 steps:
 - name: yo
   image: debian:slim
-  args: ['bash','echo','catalin']
+  args: ['-c','echo','catalin']
 - name: ls
   image: debian:slim
-  args: ['ls']
+  args: ['-c', 'ls']
 - name: date
   image: debian:slim
-  args: ['/bin/date']
+  args: ['-c', '/bin/date']
