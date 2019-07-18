@@ -1,7 +1,8 @@
 steps:
 - name: yo
   image: busybox
-  args: ['echo', 'catalin']
+  command: ['echo']
+  args: ['catalin']
 - name: ls
   image: busybox
   args: ['ls']
