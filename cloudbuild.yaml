@@ -1,8 +1,7 @@
 steps:
 - name: yo
   image: debian:slim
-  command: ['echo']
-  args: ['catalin']
+  args: ['echo','catalin']
 - name: ls
   image: debian:slim
   args: ['ls']
