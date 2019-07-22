@@ -6,3 +6,5 @@ Define steps in a `cloudbuild.yaml` file and triggermesh will process
 
 
 Hello Knative AGAIN
+
+foo
